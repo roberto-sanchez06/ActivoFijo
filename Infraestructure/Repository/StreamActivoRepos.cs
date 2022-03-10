@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Infraestructure.Repository
 {
-    public class StreamActivoRepository
+    public class StreamActivoRepos
     {
         private FileStream fileStream;
         private BinaryReader binaryReader;
         private BinaryWriter binaryWriter;
         private string filename = "Activo.dat";
 
-        public StreamActivoRepository()
+        public StreamActivoRepos()
         {
         }
 
