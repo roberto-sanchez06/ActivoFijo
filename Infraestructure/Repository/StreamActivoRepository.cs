@@ -1,5 +1,4 @@
 ﻿using Domain.Entities;
-using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Infraestructure.Repository
 {
-    public class StreamActivoRepository : IActivoModel 
+    public class StreamActivoRepository
     {
         private FileStream fileStream;
         private BinaryReader binaryReader;
@@ -35,7 +34,7 @@ namespace Infraestructure.Repository
                     binaryWriter.Write(t.valorResidual);
                 }
             }
-            catch (IOException )
+            catch (IOException)
             {
 
                 throw;
@@ -73,6 +72,7 @@ namespace Infraestructure.Repository
 
                 throw;
             }
+            throw new NotImplementedException();
         }
     }
 }
