@@ -14,13 +14,13 @@ namespace AppCore.Processes
         {
             List<double> depreciaciones = new List<double>();
             double TotalVidaUtil=0;
-            for(int i=1; i < activo.vidaUtil+1; i++)
+            for(int i=1; i < activo.VidaUtil+1; i++)
             {
                 TotalVidaUtil += i;
             }
-           for(int i = 1; i < activo.vidaUtil+1; i++)
+           for(int i = 1; i < activo.VidaUtil+1; i++)
             {
-                double depreciacion = (i*(activo.valor-activo.valorResidual)) / TotalVidaUtil;
+                double depreciacion = (i*(activo.Valor-activo.ValorResidual)) / TotalVidaUtil;
                 depreciaciones.Add(depreciacion);
             }
             return depreciaciones;
